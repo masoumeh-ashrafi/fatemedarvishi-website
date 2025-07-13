@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="جدیدترین مقالات و نکات آموزشی در زمینه آرایش دائم، فیبروز و میکروبلیدینگ توسط فاطمه درویشی، متخصص زیبایی در مشهد.">
+    <title>وبلاگ و مقالات - فاطمه درویشی</title>
+
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            display: flex;
+            flex-direction: column;
+            background-color: #f7f3ff;
+            min-height: 100vh;
+        }
+        main {
+            flex-grow: 1;
+        }
+        .text-shawl-dark { color: #556b2f; }
+        .hover\:text-shawl-dark:hover { color: #556b2f; }
+        .article-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Header - منوی کامل و یکپارچه -->
+    <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div>
+                <a href="index.html"> 
+                    <img src="1.png" alt="لوگو فاطمه درویشی" class="h-10 rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/40x40/f7f3ff/556B2F?text=FD';"> 
+                </a>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-gray-600 hover:text-shawl-dark transition duration-300 rounded-md p-2">خانه</a></li>
+                    <li><a href="blog.html" class="text-shawl-dark font-semibold transition duration-300 rounded-md p-2">وبلاگ</a></li>
+                    <li><a href="index.html#services" class="text-gray-600 hover:text-shawl-dark transition duration-300 rounded-md p-2">خدمات</a></li>
+                    <li><a href="services.html" class="text-gray-600 hover:text-shawl-dark transition duration-300 rounded-md p-2">نمونه کارها</a></li>
+                    <li><a href="about-us.html" class="text-gray-600 hover:text-shawl-dark transition duration-300 rounded-md p-2">درباره من</a></li>
+                    <li><a href="contact-us.html" class="text-gray-600 hover:text-shawl-dark transition duration-300 rounded-md p-2">تماس با من</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- محتوای اصلی صفحه وبلاگ -->
+    <main class="container mx-auto px-4 py-12 md:py-20">
+        <div class="text-center mb-16">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900">وبلاگ و مقالات آموزشی</h1>
+            <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">جدیدترین نکات و اطلاعات تخصصی در زمینه آرایش دائم و زیبایی را اینجا بخوانید.</p>
+        </div>
+
+        <!-- گرید نمایش مقالات با چیدمان کامل -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- کارت مقاله اول -->
+            <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                <a href="post1.html"><img src="2.jpg" alt="تصویر مراقبت بعد از فیبروز ابرو" class="w-full h-48 object-cover"></a>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex justify-between items-center text-sm text-gray-500 mb-2"><span>نویسنده: م .اشرفی</span><span>۱ تیر ۱۴۰۴</span></div>
+                    <h2 class="text-xl font-bold mb-3 text-gray-900 flex-grow"><a href="post1.html" class="hover:text-shawl-dark">مراقبت‌های ضروری بعد از فیبروز ابرو</a></h2>
+                    <p class="text-gray-700 mb-4">نتیجه نهایی فیبروز، ۵۰٪ به مهارت پیگمنتر و ۵۰٪ به مراقبت شما بستگی دارد...</p>
+                    <a href="post1.html" class="font-semibold text-shawl-dark hover:underline mt-auto">ادامه مطلب &larr;</a>
+                </div>
+            </div>
+
+            <!-- کارت مقاله دوم -->
+            <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                <a href="post2.html"><img src="4.jpg" alt="مقایسه میکروبلیدینگ و میکروپیگمنتیشن" class="w-full h-48 object-cover"></a>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex justify-between items-center text-sm text-gray-500 mb-2"><span>نویسنده: م .اشرفی</span><span>۸ تیر ۱۴۰۴</span></div>
+                    <h2 class="text-xl font-bold mb-3 text-gray-900 flex-grow"><a href="post2.html" class="hover:text-shawl-dark">تفاوت میکروبلیدینگ و میکروپیگمنتیشن</a></h2>
+                    <p class="text-gray-700 mb-4">کدام تکنیک برای نوع پوست و مدل ابروی شما مناسب‌تر است؟ در این مقاله تفاوت‌ها را بررسی می‌کنیم...</p>
+                    <a href="post2.html" class="font-semibold text-shawl-dark hover:underline mt-auto">ادامه مطلب &larr;</a>
+                </div>
+            </div>
+            
+            <!-- کارت مقاله سوم -->
+            <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                <a href="post3.html"><img src="5.jpg" alt="درد خط چشم دائم" class="w-full h-48 object-cover"></a>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex justify-between items-center text-sm text-gray-500 mb-2"><span>نویسنده: م .اشرفی</span><span>۱۵ تیر ۱۴۰۴</span></div>
+                    <h2 class="text-xl font-bold mb-3 text-gray-900 flex-grow"><a href="post3.html" class="hover:text-shawl-dark">آیا خط چشم دائم درد دارد؟</a></h2>
+                    <p class="text-gray-700 mb-4">"درد" اصلی‌ترین مانع ذهنی مشتریان است. این مقاله به آن‌ها اطمینان خاطر می‌دهد...</p>
+                    <a href="post3.html" class="font-semibold text-shawl-dark hover:underline mt-auto">ادامه مطلب &larr;</a>
+                </div>
+            </div>
+
+            <!-- کارت مقاله چهارم -->
+            <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                <a href="post4.html"><img src="111.jpg" alt="راهنمای کامل آرایش دائم" class="w-full h-48 object-cover"></a>
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex justify-between items-center text-sm text-gray-500 mb-2"><span>نویسنده: م .اشرفی</span><span>۲۰ تیر ۱۴۰۴</span></div>
+                    <h2 class="text-xl font-bold mb-3 text-gray-900 flex-grow"><a href="post4.html" class="hover:text-shawl-dark">راهنمای کامل آرایش دائم: هرآنچه باید بدانید</a></h2>
+                    <p class="text-gray-700 mb-4">پاسخ تمام سوالات شما از چیستی آرایش دائم گرفته تا ماندگاری، عوارض و انتخاب بهترین متخصص...</p>
+                    <a href="post4.html" class="font-semibold text-shawl-dark hover:underline mt-auto">ادامه مطلب &larr;</a>
+                </div>
+            </div>
+                        <!-- کارت مقاله پنجم -->
+                        <!-- کارت مقاله پنجم: کاشت ابرو یا میکروبلیدینگ -->
+<div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+    <a href="post5.html">
+        <img src="141.jpg" alt="مقایسه کاشت ابرو و میکروبلیدینگ" class="w-full h-48 object-cover">
+    </a>
+    <div class="p-6 flex flex-col flex-grow">
+        <div class="flex justify-between items-center text-sm text-gray-500 mb-2">
+            <span>نویسنده: م. اشرفی</span>
+            <span>۲۵ تیر ۱۴۰۴</span>
+        </div>
+        <h2 class="text-xl font-bold mb-3 text-gray-900 flex-grow">
+            <a href="post5.html" class="hover:text-shawl-dark">کاشت ابرو بهتر است یا میکروبلیدینگ؟</a>
+        </h2>
+        <p class="text-gray-700 mb-4">
+            مقایسه کامل دو روش از نظر هزینه، ماندگاری، درد و ظاهر نهایی. یک بار برای همیشه بهترین انتخاب را برای خودتان انجام دهید...
+        </p>
+        <a href="post5.html" class="font-semibold text-shawl-dark hover:underline mt-auto">ادامه مطلب &larr;</a>
+    </div>
+</div>
+
+      <!-- کارت مقاله ششم -->
+<div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+    <a href="post6.html">
+        <img src="137.jpg" alt="انتخاب بهترین مرکز میکروبلیدینگ در مشهد" class="w-full h-48 object-cover">
+    </a>
+    <div class="p-6 flex flex-col flex-grow">
+         <div class="flex justify-between items-center text-sm text-gray-500 mb-2">
+            <span>نویسنده: م. اشرفی</span>
+            <span>۳۰ تیر ۱۴۰۴</span>
+        </div>
+        <h2 class="text-xl font-bold mb-3 text-gray-900 flex-grow">
+            <a href="post6.html" class="hover:text-shawl-dark">چطور بهترین مرکز میکروبلیدینگ در مشهد را انتخاب کنیم؟</a>
+        </h2>
+        <p class="text-gray-700 mb-4">
+            با بررسی این ۵ نکته کلیدی، بهترین پیگمنتر را برای زیبایی خود پیدا کنید و با اطمینان کامل تصمیم بگیرید...
+        </p>
+        <a href="post6.html" class="font-semibold text-shawl-dark hover:underline mt-auto">ادامه مطلب &larr;</a>
+    </div>
+</div>
+
+<!-- کارت مقاله هفتم: هزینه و قیمت میکروبلیدینگ -->
+<div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+    <a href="post7.html">
+        <img src="138.jpg" alt="بررسی هزینه و قیمت میکروبلیدینگ در مشهد" class="w-full h-48 object-cover">
+    </a>
+    <div class="p-6 flex flex-col flex-grow">
+         <div class="flex justify-between items-center text-sm text-gray-500 mb-2">
+            <span>نویسنده: م. اشرفی</span>
+            <span>۵ مرداد ۱۴۰۴</span>
+        </div>
+        <h2 class="text-xl font-bold mb-3 text-gray-900 flex-grow">
+            <a href="post7.html" class="hover:text-shawl-dark">هزینه و قیمت میکروبلیدینگ در مشهد (سال ۱۴۰۴)</a>
+        </h2>
+        <p class="text-gray-700 mb-4">
+            قیمت میکروبلیدینگ به چه عواملی بستگی دارد؟ بررسی کامل تعرفه‌ها و نکاتی برای یک انتخاب هوشمندانه...
+        </p>
+        <a href="post7.html" class="font-semibold text-shawl-dark hover:underline mt-auto">ادامه مطلب &larr;</a>
+    </div>
+</div>
+<!-- کارت مقاله هشتم: عوارض میکروبلیدینگ -->
+<div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+    <a href="post8.html">
+        <img src="140.jpg" alt="بررسی عوارض میکروبلیدینگ و راه‌های پیشگیری" class="w-full h-48 object-cover">
+    </a>
+    <div class="p-6 flex flex-col flex-grow">
+        <div class="flex justify-between items-center text-sm text-gray-500 mb-2">
+            <span>نویسنده: م. اشرفی</span>
+            <span>۱۰ مرداد ۱۴۰۴</span>
+        </div>
+        <h2 class="text-xl font-bold mb-3 text-gray-900 flex-grow">
+            <a href="post8.html" class="hover:text-shawl-dark">عوارض میکروبلیدینگ و راه‌های پیشگیری از آن</a>
+        </h2>
+        <p class="text-gray-700 mb-4">
+            نگاهی واقع‌بینانه به خطرات و عوارض احتمالی فیبروز ابرو و روش‌های انجام یک کار کاملاً ایمن و بهداشتی...
+        </p>
+        <a href="post8.html" class="font-semibold text-shawl-dark hover:underline mt-auto">ادامه مطلب &larr;</a>
+    </div>
+</div>
+<!-- کارت مقاله نهم: مراقبت‌های قبل از میکروبلیدینگ -->
+<div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+    <a href="post9.html">
+        <img src="126.jpg" alt="مراقبت‌های قبل از انجام میکروبلیدینگ" class="w-full h-48 object-cover">
+    </a>
+    <div class="p-6 flex flex-col flex-grow">
+        <div class="flex justify-between items-center text-sm text-gray-500 mb-2">
+            <span>نویسنده: م. اشرفی</span>
+            <span>۱۵ مرداد ۱۴۰۴</span>
+        </div>
+        <h2 class="text-xl font-bold mb-3 text-gray-900 flex-grow">
+            <a href="post9.html" class="hover:text-shawl-dark">مراقبت‌های قبل از میکروبلیدینگ که باید بدانید</a>
+        </h2>
+        <p class="text-gray-700 mb-4">
+            با رعایت این نکات ساده قبل از جلسه، به ماندگاری بیشتر و نتیجه بهتر ابروهای جدیدتان کمک کنید...
+        </p>
+        <a href="post9.html" class="font-semibold text-shawl-dark hover:underline mt-auto">ادامه مطلب &larr;</a>
+    </div>
+</div>
+            <!-- کارت مقاله نمونه (برای آینده) -->
+            <div class="article-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col opacity-70">
+                <img src="https://placehold.co/600x400/d2e3d2/FFFFFF?text=Coming+Soon" alt="مقاله بعدی" class="w-full h-48 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="flex justify-between items-center text-sm text-gray-500 mb-2"><span>نویسنده: م .اشرفی</span><span>به زودی...</span></div>
+                    <h2 class="text-xl font-bold mb-3 text-gray-900 flex-grow">عوارض آرایش دائم: آیا واقعا خطرناک است؟</h2>
+                    <p class="text-gray-700 mb-4">بررسی واقع‌بینانه عوارض احتمالی و راه‌های پیشگیری از آن‌ها برای یک تجربه کاملاً ایمن.</p>
+                    <a href="#" class="font-semibold text-gray-400 cursor-not-allowed mt-auto">ادامه مطلب &larr;</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer - مشابه صفحات دیگر -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">&copy; 2025 فاطمه درویشی. تمامی حقوق محفوظ است.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گالری تصاویر</title>
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .carousel-container {
+            width: 600px;
+            overflow: hidden;
+            margin: 20px auto;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .carousel {
+            display: flex;
+            width: calc(200px * 8 * 2); /* دو برابر تعداد تصاویر برای حرکت بی‌نهایت */
+            animation: slide 15s linear infinite;
+        }
+
+        .carousel img {
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-200px * 8)); } /* حرکت به اندازه 8 تصویر */
+        }
+
+        /* دکمه‌های ناوبری */
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 50%;
+        }
+
+        .prev { left: 10px; }
+        .next { right: 10px; }
+
+        .nav-btn:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="carousel-container">
+        <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="carousel">
+            <!-- تصاویر دو بار تکرار شده‌اند تا اسکرول بی‌نهایت کار کند -->
+            <img src="1.jpeg" alt="">
+            <img src="2.jpeg" alt="">
+            <img src="3.jpeg" alt="">
+            <img src="4.jpeg" alt="">
+            <img src="5.jpeg" alt="">
+            <img src="6.jpeg" alt="">
+            <img src="7.jpeg" alt="">
+            <img src="8.jpeg" alt="">
+            <!-- تکرار برای افکت بی‌نهایت -->
+            <img src="1.jpeg" alt="">
+            <img src="2.jpeg" alt="">
+            <img src="3.jpeg" alt="">
+            <img src="4.jpeg" alt="">
+            <img src="5.jpeg" alt="">
+            <img src="6.jpeg" alt="">
+            <img src="7.jpeg" alt="">
+            <img src="8.jpeg" alt="">
+        </div>
+        <button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <script>
+        function moveSlide(direction) {
+            const carousel = document.querySelector(".carousel");
+            let scrollAmount = 200 * direction; // حرکت به اندازه یک تصویر
+            carousel.style.transition = "transform 0.5s ease-in-out";
+            carousel.style.transform = `translateX(${scrollAmount}px)`;
+        }
+    </script>
+
+</body>
+</html>
